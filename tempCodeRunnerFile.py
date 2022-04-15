@@ -1,0 +1,1 @@
+mycur.execute(insert)
