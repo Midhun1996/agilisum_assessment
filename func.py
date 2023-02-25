@@ -26,3 +26,18 @@ def printalp_1(x,defalut_rep=1):
     out = [str(al) for _ in range(int(rep))]
     result.extend(out)
   return "".join(result)
+
+# last one most suitable and readable
+
+def print_seq(string,rep=1):
+  result = []
+  for e,v in enumerate(string):
+    if v.isalpha():
+      try:
+        val = v * int(string[e+1])
+        result.append(val)
+      except Exception as e:
+        val = v * rep
+        result.append(val)
+  else:
+    return "".join(result)
