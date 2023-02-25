@@ -29,6 +29,16 @@ def printalp_1(x,defalut_rep=1):
 
 # last one most suitable and readable
 
+# without default value
+
+def print_seq1(seq):
+  alp = seq[0::2]
+  rep = seq[1::2]
+  result = [v*int(r) for v,r in zip(alp,rep)]
+  return "".join(result)
+
+# with default value
+
 def print_seq(string,rep=1):
   result = []
   for e,v in enumerate(string):
